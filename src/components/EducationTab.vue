@@ -67,7 +67,7 @@ export default {};
 }
 
 .about {
-  padding: 50px 0px; /* Adjusted padding for better spacing */
+  padding: 50px 0px; 
   background-color: #141416;
 }
 
@@ -88,7 +88,7 @@ export default {};
 }
 
 .about-text h2 {
-  font-size: 40px; /* Adjusted font size for better readability */
+  font-size: 40px;
   margin-bottom: 20px;
   font-family: "Prompt", sans-serif;
   background: -webkit-linear-gradient(144deg, #af40ff, #00ddeb 50%, #5b42f3);
@@ -100,7 +100,7 @@ export default {};
 .about-text h5 {
   color: #cc0000;
   letter-spacing: 2px;
-  font-size: 28px; /* Adjusted font size for better readability */
+  font-size: 28px; 
   margin-bottom: 20px;
   background: -webkit-linear-gradient(144deg, #4a00e0 30%, #8e2de2);
   -webkit-background-clip: text;
@@ -112,8 +112,8 @@ export default {};
 .about-text p {
   color: white;
   letter-spacing: 1px;
-  line-height: 30px; /* Adjusted line-height for better spacing */
-  font-size: 18px; /* Adjusted font size for better readability */
+  line-height: 30px; /
+  font-size: 18px; 
   margin-bottom: 10px;
   font-family: "Palanquin", sans-serif;
   margin-left: 15rem;

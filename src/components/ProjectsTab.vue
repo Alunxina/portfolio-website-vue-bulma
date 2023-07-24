@@ -158,7 +158,6 @@ export default {
         "https://github.com/Alunxina/Hobbit-Text-Adventure-Javadoc";
     },
 
-    // Add more methods for other social media buttons as needed
   },
 };
 </script>

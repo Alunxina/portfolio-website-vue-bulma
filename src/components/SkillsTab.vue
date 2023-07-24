@@ -19,7 +19,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Repeat this div for other cards -->
         <div class="card">
           <div class="card-content">
             <h1>C</h1>
@@ -34,7 +33,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
         <div class="card">
           <div class="card-content">
             <h1>JavaScript</h1>
@@ -49,7 +47,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
         <div class="card">
           <div class="card-content">
             <h1>Assembly</h1>
@@ -64,7 +61,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
         <div class="card">
           <div class="card-content">
             <h1>Flutter</h1>
@@ -79,7 +75,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
         <div class="card">
           <div class="card-content">
             <h1>PHP</h1>
@@ -94,7 +89,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
         <div class="card">
           <div class="card-content">
             <h1>Java</h1>
@@ -109,7 +103,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
         <div class="card">
           <div class="card-content">
             <h1>MySQL</h1>
@@ -124,7 +117,6 @@
       </div>
 
       <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
         <div class="card">
           <div class="card-content">
             <h1>Version Control</h1>
@@ -138,7 +130,6 @@
         </div>
       </div>
 
-      <!-- Add other cards for different programming languages here -->
     </div>
   </div>
 </template>
@@ -221,7 +212,7 @@ export default {};
 .skillswrap h1 {
   margin-top: 5vh;
   font-size: 5rem;
-  margin-bottom: 5vh; /* Add margin at the bottom for spacing */
+  margin-bottom: 5vh; 
   font-family: "Prompt", sans-serif;
 }
 

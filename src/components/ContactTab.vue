@@ -61,7 +61,7 @@ export default {
       window.location.href = "https://github.com/Alunxina";
     },
 
-    // Add more methods for other social media buttons as needed
+
   },
 };
 </script>
