@@ -12,7 +12,7 @@
         </ul>
       </div>
     </div>
-    <a
+    <!-- <a
       role="button"
       class="navbar-burger burger"
       aria-label="menu"
@@ -23,7 +23,7 @@
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
-    </a>
+    </a> -->
   </nav>
   <div class="landingpage" id="top">
     <div class="landingpagewrap">
@@ -38,16 +38,16 @@
 
 <script>
 export default {
-  data() {
-    return {
-      isNavbarActive: false,
-    };
-  },
-  methods: {
-    toggleNavbar() {
-      this.isNavbarActive = !this.isNavbarActive;
-    },
-  },
+    // data() {
+    //   return {
+    //     isNavbarActive: false,
+    //   };
+    // },
+    // methods: {
+    //   toggleNavbar() {
+    //     this.isNavbarActive = !this.isNavbarActive;
+    //   },
+    // },
 };
 </script>
 

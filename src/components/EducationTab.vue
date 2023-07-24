@@ -112,7 +112,7 @@ export default {};
 .about-text p {
   color: white;
   letter-spacing: 1px;
-  line-height: 30px; /
+  line-height: 30px; 
   font-size: 18px; 
   margin-bottom: 10px;
   font-family: "Palanquin", sans-serif;
