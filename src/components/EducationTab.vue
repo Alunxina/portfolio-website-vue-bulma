@@ -67,7 +67,7 @@ export default {};
 }
 
 .about {
-  padding: 50px 0px; 
+  padding: 50px 0px;
   background-color: #141416;
 }
 
@@ -100,7 +100,7 @@ export default {};
 .about-text h5 {
   color: #cc0000;
   letter-spacing: 2px;
-  font-size: 28px; 
+  font-size: 28px;
   margin-bottom: 20px;
   background: -webkit-linear-gradient(144deg, #4a00e0 30%, #8e2de2);
   -webkit-background-clip: text;
@@ -112,15 +112,18 @@ export default {};
 .about-text p {
   color: white;
   letter-spacing: 1px;
-  line-height: 30px; 
-  font-size: 18px; 
+  line-height: 30px;
+  font-size: 18px;
   margin-bottom: 10px;
   font-family: "Palanquin", sans-serif;
   margin-left: 15rem;
 }
 
 /* Responsive Typography */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1368px) {
+  .title {
+    margin-left: 2rem;
+  }
   .about-text h2 {
     font-size: 30px;
     margin-left: 0;

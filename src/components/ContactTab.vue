@@ -233,4 +233,12 @@ export default {
     margin-left: 2.5rem;
   }
 }
+
+
+@media screen and (max-width: 1368px) {
+  .title {
+    margin-left: 2rem; /* Centering the title on small screens */
+  }
+
+}
 </style>

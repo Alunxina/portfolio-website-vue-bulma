@@ -45,4 +45,7 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+html,body{
+    overflow-x: hidden;
+}
 </style>

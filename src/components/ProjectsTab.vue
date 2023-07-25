@@ -1,19 +1,18 @@
 <template>
   <div class="section" id="projects">
-    <div class="title is-size-1 has-text-left">Projects and Contributions</div>
+    <div class="title is-size-1 has-text-left">Projects</div>
     <br /><br />
     <div class="columns">
       <div class="column">
         <div class="card" @click="LagawRedirect">
           <div class="box">
             <div class="block">
-              <figure class="image is-5by3">
-                <img src="../assets/lagaw.png" />
-              </figure>
-              <br />
               <div class="card-content">
                 <div class="has-text-left">
-                  <br />
+                  <figure class="image is-5by3">
+                    <img src="../assets/lagaw.png" />
+                  </figure>
+                  <br /><br /><br /><br /><br /><br /><br /><br />
                   <h1>Lagaw: Iloilo City's Travel App</h1>
                   <br />
                   <p>
@@ -26,13 +25,13 @@
                     visit Iloilo City. It features a list of accomodations for
                     travellers who want to stay overnight as well as a list of
                     attractions that they can visit to along with several other
-                    features.
+                    features such as geolocation.
                   </p>
+                  <button class="gradientbutton">
+                    <span>Access the Project</span>
+                  </button>
                 </div>
               </div>
-              <button class="gradientbutton">
-                <span>Access the Project</span>
-              </button>
             </div>
           </div>
         </div>
@@ -42,14 +41,13 @@
         <div class="card" @click="AroundUPVRedirect">
           <div class="box">
             <div class="block">
-              <figure class="image is-5by3">
-                <img src="../assets/aroundupv.png" />
-              </figure>
-              <br />
               <div class="card-content">
                 <div class="has-text-left">
-                  <br />
-                  <h1>AroundUPV: A UPV Navigation App</h1>
+                  <figure class="image is-5by3">
+                    <img src="../assets/aroundupv.png" />
+                  </figure>
+                  <br /><br /><br /><br /><br /><br /><br /><br />
+                  <h1>AroundUPV: UPV's Nav Application</h1>
                   <br />
                   <p>
                     <small>UI Designer</small>
@@ -60,11 +58,11 @@
                     boarding houses and several key locations, perfect for
                     freshmen who are just starting to get around the university.
                   </p>
+                  <button class="gradientbutton">
+                    <span>Access the Project</span>
+                  </button>
                 </div>
               </div>
-              <button class="gradientbutton">
-                <span>Access the Project</span>
-              </button>
             </div>
           </div>
         </div>
@@ -74,14 +72,13 @@
         <div class="card" @click="DiwataRedirect">
           <div class="box">
             <div class="block">
-              <figure class="image is-5by3">
-                <img src="../assets/diwatawebsite.png" />
-              </figure>
-              <br />
               <div class="card-content">
                 <div class="has-text-left">
-                  <br />
-                  <h1>UPV Diwata Esports Website</h1>
+                  <figure class="image is-5by3">
+                    <img src="../assets/diwatawebsite.png" />
+                  </figure>
+                  <br /><br /><br /><br /><br /><br /><br /><br />
+                  <h1>Esports Org Website Mockup</h1>
                   <br />
                   <p>
                     <small>Fullstack developer, UI Designer</small>
@@ -92,11 +89,11 @@
                     organization. Not only that, the UPV Diwata Esports Website
                     also features a gallery and the org's mission and vision.
                   </p>
+                  <button class="gradientbutton">
+                    <span>Access the Project</span>
+                  </button>
                 </div>
               </div>
-              <button class="gradientbutton">
-                <span>Access the Project</span>
-              </button>
             </div>
           </div>
         </div>
@@ -106,14 +103,13 @@
         <div class="card" @click="HobbitRedirect">
           <div class="box">
             <div class="block">
-              <figure class="image is-5by3">
-                <img src="../assets/hobbit.png" />
-              </figure>
-              <br />
               <div class="card-content">
                 <div class="has-text-left">
-                  <br />
-                  <h1>Hobbit: Text Adventure</h1>
+                  <figure class="image is-5by3">
+                    <img src="../assets/hobbit.png" />
+                  </figure>
+                  <br /><br /><br /><br /><br /><br /><br /><br />
+                  <h1>Hobbit Text Adventure</h1>
                   <br />
                   <p>
                     <small>UI Designer</small>
@@ -123,13 +119,13 @@
                     Shire. Players can decide and choose the best decision in
                     certain scenarios and watch out for the other hobbits who
                     want to ruin your special event! Get the best ending and
-                    help your uncle plan the perfect birthday!
+                    help your uncle !
                   </p>
+                  <button class="gradientbutton">
+                    <span>Access the Project</span>
+                  </button>
                 </div>
               </div>
-              <button class="gradientbutton">
-                <span>Access the Project</span>
-              </button>
             </div>
           </div>
         </div>
@@ -157,7 +153,6 @@ export default {
       window.location.href =
         "https://github.com/Alunxina/Hobbit-Text-Adventure-Javadoc";
     },
-
   },
 };
 </script>
@@ -194,11 +189,6 @@ export default {
   text-decoration: none;
 }
 
-.content {
-  padding: 1.1rem;
-  cursor: pointer;
-}
-
 .box img {
   object-fit: cover;
   width: 100%;
@@ -210,7 +200,6 @@ export default {
 .title {
   color: white;
   font-size: 20px;
-  line-height: 1.75rem;
 
   font-family: "Prompt", sans-serif;
 }
@@ -225,57 +214,48 @@ export default {
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   cursor: pointer;
 }
-
 .card-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
   background: rgb(5, 6, 45);
   border-radius: 10px;
   width: 100%;
-  height: 26rem;
+  padding: 1.5rem;
+}
+.box {
+  height: 100%;
 }
 
 .card-content h1 {
   color: white;
   font-size: 1.5rem;
-  text-align: left;
   margin: 0;
   font-family: "Prompt", sans-serif;
+  margin-bottom: 1rem;
 }
+
 .card-content p {
   color: white;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
-
-.card-content progress {
-  height: 24px;
-  width: 80%;
-  margin-right: 5rem;
-}
-
 .card:hover {
   transform: scale(1.05);
   background: linear-gradient(315deg, #ff0058, #03a9f4);
 }
 
-.skills {
-  background-color: #141416;
-}
-
-.skillswrap {
-  width: 100%;
-  margin-left: 0;
-  text-align: center; /* Center the h1 text on mobile */
-}
-
 .skillswrap h1 {
   margin-top: 5vh;
   font-size: 5rem;
-  margin-bottom: 5vh; /* Add margin at the bottom for spacing */
+  margin-bottom: 5vh;
   font-family: "Prompt", sans-serif;
 }
 
 .gradientbutton {
+  display: flex;
   position: relative;
   font-family: inherit;
   font-weight: 500;
@@ -315,7 +295,6 @@ export default {
   height: 100%;
   z-index: 0;
 }
-
 .gradientbutton::before {
   content: "";
   background: #000;
@@ -338,13 +317,28 @@ body {
 }
 
 /* Mobile responsive layout using Bulma classes */
-@media screen and (max-width: 768px) {
-  .cardmain {
-    margin-left: 1rem;
-    margin-right: 1rem;
+@media screen and (max-width: 1368px) {
+  .title {
+    font-size: 1rem;
+    margin-left: 2rem;
   }
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .card-content h1 {
+    margin-top: 4rem;
     padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .card-content p {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .block image {
+    width: auto;
+    height: auto;
   }
 }
 </style>

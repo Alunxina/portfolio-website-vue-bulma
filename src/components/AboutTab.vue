@@ -1,5 +1,5 @@
 <template>
-  <div class="about section" id ="aboutpage">
+  <div class="about section" id="aboutpage">
     <div class="title is-size-1 has-text-left">About Me</div>
     <div class="main">
       <div class="columns is-centered">
@@ -13,16 +13,16 @@
               Hi! My name is Laviele Trias. I am currently a third year BS
               Computer Science Student studying at the University of the
               Philippines Visayas.
-              <br>
-              <br>
+              <br />
+              <br />
               I currently live in Iloilo City, Philippines.
-              <br>
-              <br>
+              <br />
+              <br />
               I am also the founder and president of the first-ever premiere
               Esports Organization in the University of the Philippines Visayas,
               UPV Diwata Esports.
-              <br>
-              <br>
+              <br />
+              <br />
               I like to play video games in my spare time as well as read and
               write books.
             </p>
@@ -46,7 +46,7 @@ export default {};
 }
 
 .about {
-  padding: 50px 0px; /* Adjusted padding for better spacing */
+  padding: 50px 20px; 
   background-color: #141416;
 }
 
@@ -57,10 +57,11 @@ export default {};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  margin-left:15rem;
+  margin-left: 14rem;
 }
-.column{
-  margin-left: 5rem;
+
+.column {
+  margin-left: 0; /* Removed unnecessary margin */
 }
 
 .main {
@@ -90,9 +91,29 @@ export default {};
 .about-text p {
   color: white;
   letter-spacing: 1px;
-  line-height: 30px; /* Adjusted line-height for better spacing */
-  font-size: 18px; /* Adjusted font size for better readability */
+  line-height: 30px; 
+  font-size: 18px; 
   margin-bottom: 10px;
   font-family: "Palanquin", sans-serif;
+}
+
+@media screen and (max-width: 1368px) {
+  .title {
+    margin-left: 0; 
+  }
+  .column {
+    margin-left: 0; 
+  }
+  .main {
+    display: block; 
+  }
+  .profile-image {
+    max-width: 80%; 
+    margin: 1rem auto; 
+  }
+  .about-text p {
+    font-size: 1rem;
+    width: auto;
+  }
 }
 </style>

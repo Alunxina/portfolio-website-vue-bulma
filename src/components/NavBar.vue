@@ -38,16 +38,16 @@
 
 <script>
 export default {
-    // data() {
-    //   return {
-    //     isNavbarActive: false,
-    //   };
-    // },
-    // methods: {
-    //   toggleNavbar() {
-    //     this.isNavbarActive = !this.isNavbarActive;
-    //   },
-    // },
+  // data() {
+  //   return {
+  //     isNavbarActive: false,
+  //   };
+  // },
+  // methods: {
+  //   toggleNavbar() {
+  //     this.isNavbarActive = !this.isNavbarActive;
+  //   },
+  // },
 };
 </script>
 
@@ -197,4 +197,5 @@ export default {
 .gradientbutton:active {
   transform: scale(0.95);
 }
+
 </style>

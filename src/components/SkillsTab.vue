@@ -129,7 +129,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -141,7 +140,7 @@ export default {};
 <style lang="scss" scoped>
 @import "~bulma/css/bulma.css";
 
-/* About Page */
+
 
 /* Skills Card display */
 .title {
@@ -203,31 +202,29 @@ export default {};
   background-color: #141416;
 }
 
-.skillswrap {
-  width: 100%;
-  margin-left: 0;
-  text-align: center; /* Center the h1 text on mobile */
-}
-
-.skillswrap h1 {
-  margin-top: 5vh;
-  font-size: 5rem;
-  margin-bottom: 5vh; 
-  font-family: "Prompt", sans-serif;
-}
-
 body {
   background-color: #141416;
 }
 
-/* Mobile responsive layout using Bulma classes */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1368px) {
+  .title {
+    margin-left: 2rem;
+  }
   .cardmain {
     margin-left: 1rem;
     margin-right: 1rem;
+    width: auto;
   }
+
   .card-content h1 {
     padding-left: 1rem;
+    font-size: 1rem; 
+  }
+
+  .card-content progress {
+    width: auto; 
+    margin:0;
   }
 }
 </style>
