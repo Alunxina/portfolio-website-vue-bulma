@@ -64,7 +64,7 @@ export default {
   align-items: center;
   background-color: #141416;
   color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

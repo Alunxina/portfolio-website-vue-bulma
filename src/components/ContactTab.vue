@@ -239,6 +239,5 @@ export default {
   .title {
     margin-left: 2rem; /* Centering the title on small screens */
   }
-
 }
 </style>
