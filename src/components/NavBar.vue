@@ -60,6 +60,7 @@
 <style lang="scss" scoped>
 @import "~bulma/css/bulma.css";
 
+
 .navbar-menu {
   background-color: #141416;
 }
@@ -89,6 +90,7 @@
 }
 
 .herocontent{
+  margin-top: 4rem;
   color:white;
   font-family: "Prompt", sans-serif;
 }

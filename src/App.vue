@@ -35,6 +35,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Palanquin:wght@500&display=swap');
 
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
