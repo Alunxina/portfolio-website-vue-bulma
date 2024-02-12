@@ -1,230 +1,182 @@
 <template>
-  <div class="skills" id="skills">
-    <div class="title is-size-1 has-text-left">Programming Languages</div>
-    <div class="cardmain columns is-multiline">
-      <!-- Added is-multiline class -->
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <!-- Adjusted column sizes for different screen sizes -->
-        <div class="card">
-          <div class="card-content">
-            <h1>Python</h1>
-            <progress
-              id="progressbar"
-              value="70"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
+  <section class="hero is-fullwidth">
+    <div class="hero-body">
+      <div class="container has-text-left">
+        <h1 class="title">Programming Languages and Skills</h1>
+      </div>
+    </div>
+
+    <div class="hero-foot is-fullwidth">
+      <nav class="tabs is-boxed is-fullwidth is-large">
+        <div class="container">
+          <ul>
+            <ul>
+              <li class="tab" @click="openTab('languages')">
+                <a>Languages</a>
+              </li>
+              <li class="tab" @click="openTab('fworksdb')">
+                <a>Frameworks and Database</a>
+              </li>
+              <li class="tab" @click="openTab('software')"><a>Software</a></li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container section is-fullwidth">
+      <div id="languages" class="content-tab" ref="languages">
+        <div class="columns">
+          <div class="column">
+            <img src="../assets/python.png" width="40" height="60" />
+            <p>Python</p>
+          </div>
+          <div class="column">
+            <img src="../assets/c.png" width="40" height="60" />
+            <p>C</p>
+          </div>
+          <div class="column">
+            <img src="../assets/javascript.png" width="40" height="60" />
+            <p>Javascript</p>
+          </div>
+          <div class="column">
+            <img src="../assets/assembly.svg" width="40" height="60" />
+            <p>NASM</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <img src="../assets/html.png" width="40" height="60" />
+            <p>HTML</p>
+          </div>
+          <div class="column">
+            <img src="../assets/css.png" width="40" height="60" />
+            <p>CSS</p>
+          </div>
+          <div class="column">
+            <img src="../assets/flutter.png" width="40" height="60" />
+            <p>Flutter</p>
+          </div>
+          <div class="column">
+            <img src="../assets/php.png" width="40" height="60" />
+            <p>PHP</p>
+          </div>
+          <div class="column">
+            <img src="../assets/java.png" width="40" height="60" />
+            <p>Java</p>
           </div>
         </div>
       </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>C</h1>
-            <progress
-              id="progressbar"
-              value="80"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
+      <div id="fworksdb" class="content-tab" style="display: none" ref="fworksdb">
+        <div class="container section is-fullwidth">
+          <div class="columns">
+            <div class="column">
+              <img src="../assets/vue.png" width="40" height="60" />
+              <p>Vue.js</p>
+            </div>
+            <div class="column">
+              <img src="../assets/github.png" width="40" height="60" />
+              <p>Github</p>
+            </div>
+            <div class="column">
+              <img src="../assets/git.png" width="40" height="60" />
+              <p>Git</p>
+            </div>
+            <div class="column">
+              <img src="../assets/mysql.png" width="40" height="60" />
+              <p>MySQL</p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>JavaScript</h1>
-            <progress
-              id="progressbar"
-              value="50"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>Assembly</h1>
-            <progress
-              id="progressbar"
-              value="80"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>Flutter</h1>
-            <progress
-              id="progressbar"
-              value="60"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>PHP</h1>
-            <progress
-              id="progressbar"
-              value="70"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>Java</h1>
-            <progress
-              id="progressbar"
-              value="50"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>MySQL</h1>
-            <progress
-              id="progressbar"
-              value="60"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-12-mobile is-6-tablet is-6-desktop">
-        <div class="card">
-          <div class="card-content">
-            <h1>Version Control</h1>
-            <progress
-              id="progressbar"
-              value="70"
-              max="100"
-              style="height: 24px; width: 40%"
-            ></progress>
+      <div id="software" class="content-tab" style="display: none" ref="software">
+        <div class="container section is-fullwidth">
+          <div class="columns">
+            <div class="column">
+              <img src="../assets/vue.png" width="40" height="60" />
+              <p>Microsoft Office</p>
+            </div>
+            <div class="column">
+              <img src="../assets/mysql.png" width="40" height="60" />
+              <p>Google Suite</p>
+            </div>
+            <div class="column">
+              <img src="../assets/github.png" width="40" height="60" />
+              <p>Notion</p>
+            </div>
+            <div class="column">
+              <img src="../assets/git.png" width="40" height="60" />
+              <p>Figma</p>
+            </div>
+            <div class="column">
+              <img src="../assets/mysql.png" width="40" height="60" />
+              <p>Draw.io</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    openTab(tabName) {
+      this.$refs[tabName].style.display = "block";
+
+      // Hide other tabs
+      for (const refName in this.$refs) {
+        if (refName !== tabName) {
+          this.$refs[refName].style.display = "none";
+        }
+      }
+
+      // Update tab classes
+      const tablinks = document.querySelectorAll(".tab");
+      tablinks.forEach((tab) => {
+        tab.classList.remove("is-active");
+      });
+      event.currentTarget.classList.add("is-active");
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 @import "~bulma/css/bulma.css";
 
+* {
+  background-color: #141416;
+}
 
-
-/* Skills Card display */
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-family: "Prompt", sans-serif;
   background: -webkit-linear-gradient(316deg, #af40ff, #00ddeb 30%, #5b42f3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  margin-left: 15rem;
-}
-.cardmain {
-  margin-top: 100px;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  font-size: 3rem;
 }
 
-.card {
-  width: 100%;
-  position: relative;
-  border-radius: 20px;
-  padding: 5px;
-  transition: all 0.5s;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-}
-
-.card-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgb(5, 6, 45);
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  height: 100px;
-}
-
-.card-content h1 {
-  color: white;
-  font-size: 25px;
-  text-align: left;
-  padding-left: 5rem;
-  margin: 0;
+a {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background: -webkit-linear-gradient(144deg, #4a00e0 30%, #8e2de2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Prompt", sans-serif;
+  font-weight: bold;
 }
 
-.card-content progress {
-  height: 24px;
-  width: 80%;
-  margin-right: 5rem;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  background: linear-gradient(315deg, #ff0058, #03a9f4);
-}
-
-.skills {
-  background-color: #141416;
-}
-
-body {
-  background-color: #141416;
-}
-
-
-@media screen and (max-width: 1368px) {
-  .title {
-    margin-left: 2rem;
-  }
-  .cardmain {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: auto;
-  }
-
-  .card-content h1 {
-    padding-left: 1rem;
-    font-size: 1rem; 
-  }
-
-  .card-content progress {
-    width: auto; 
-    margin:0;
-  }
+p {
+  color: white;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "Palanquin", sans-serif;
 }
 </style>

@@ -1,7 +1,6 @@
 <template>
   <NavBar />
   <AboutTab />
-  <EducationTab />
   <SkillsTab />
   <ProjectsTab />
   <ContactTab />
@@ -10,7 +9,6 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import AboutTab from "./components/AboutTab.vue";
-import EducationTab from "./components/EducationTab.vue";
 import SkillsTab from "./components/SkillsTab.vue";
 import ProjectsTab from "./components/ProjectsTab.vue";
 import ContactTab from "./components/ContactTab.vue";
@@ -20,7 +18,6 @@ export default {
   components: {
     NavBar,
     AboutTab,
-    EducationTab,
     SkillsTab,
     ProjectsTab,
     ContactTab,

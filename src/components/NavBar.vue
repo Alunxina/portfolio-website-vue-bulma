@@ -27,11 +27,6 @@
             </a>
           </p>
           <p class="control">
-            <a class="button is-black gradientbutton" href="#education">
-              <span>Education</span>
-            </a>
-          </p>
-          <p class="control">
             <a class="button is-black gradientbutton" href="#skills">
               <span>Skills</span>
             </a>

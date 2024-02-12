@@ -2,12 +2,13 @@
   <section>
     <div class="container">
       <div class="content has-text-left">
+        <br><br>
+        <h1 class="title">About Me</h1>
         <div class="columns">
           <div class="column is-one-quarter">
             <img src="../assets/pfpic.jpg" class="profile-image" />
           </div>
           <div class="column">
-            <h1 class="title">About Me</h1>
             <h2 class="subtitle my-4">Who am I?</h2>
             <p class="my-4">Hi! My name is Laviele Trias. I am currently a fourth-year BS
               Computer Science Student studying at the University of the
@@ -34,8 +35,7 @@
 }
 
 .title {
-  margin-top:4rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-family: "Prompt", sans-serif;
   background: -webkit-linear-gradient(316deg, #af40ff, #00ddeb 30%, #5b42f3);
   -webkit-background-clip: text;
@@ -65,7 +65,6 @@ p {
 .profile-image {
   max-width: 100%;
   border-radius: 10px;
-  margin-top: 4rem;
 }
 
 
