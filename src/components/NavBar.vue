@@ -3,7 +3,7 @@
     <nav class="navbar">
       <div class="navbar-brand">
         <a class="navbar-item">
-          <img src="https://i.imgur.com/H3lKnVi.png" width="30" height="40">
+          <img src="../assets/avatar.png" width="30" height="40">
         </a>
         <div class="navbar-burger" data-target="navbarlist">
           <span></span>
@@ -15,7 +15,7 @@
       <div id="navbarlist" class="navbar-menu">
         <div class="navbar-start">
           <div class="navbar-item has-text-white">
-            {{ name }}
+            <a style="color: white;" href="#top">{{ name }}</a>
           </div>
         </div>
         <div class="navbar-end">
@@ -49,9 +49,9 @@ export default {
     return {
       name: 'Laviele Trias',
       menuItems: [
-        { text: 'About Me', link: '#aboutpage' },
+        { text: 'About Me', link: '#aboutme' },
         { text: 'Skills', link: '#skills' },
-        { text: 'Contact Me', link: '#contact' },
+        { text: 'Projects', link: '#contact' },
       ],
       greeting: 'Hello, world!',
       introduction: 'My name is Laviele Trias. I am an aspiring software developer.',

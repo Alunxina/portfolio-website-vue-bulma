@@ -1,5 +1,6 @@
+
 <template>
-  <section class="hero is-fullwidth">
+  <section class="hero is-fullwidth" id="skills">
     <div class="hero-body">
       <div class="container has-text-left">
         <h1 class="title">Programming Languages and Skills</h1>
