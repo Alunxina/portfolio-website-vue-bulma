@@ -3,28 +3,36 @@
     <div class="container">
       <div class="content has-text-left">
         <br><br>
-        <h1 class="title">About Me</h1>
+        <h1 class="title">{{ pageTitle }}</h1>
         <div class="columns">
           <div class="column is-one-quarter">
             <img src="../assets/pfpic.jpg" class="profile-image" />
           </div>
           <div class="column">
-            <h2 class="subtitle my-4">Who am I?</h2>
-            <p class="my-4">Hi! My name is Laviele Trias. I am currently a fourth-year BS
-              Computer Science Student studying at the University of the
-              Philippines Visayas.</p>
-            <p class="my-4">I have interned as a frontend web developer at DTE Endurance Asia. I have interests in machine learning and data science
-              and have joined the UP Data Science Society to train my data science skills and gain experience.
-              I am also the founder and president of the first-ever premiere
-              Esports Organization in the University of the Philippines Visayas,
-              UPV Diwata Esports. </p>
-            <p>I like to play video games and read books in my spare time.</p>
+            <h2 class="subtitle my-4">{{ subtitle }}</h2>
+            <p class="my-4">{{ intro }}</p>
+            <p class="my-4">{{ experience }}</p>
+            <p>{{ hobbies }}</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      pageTitle: 'About Me',
+      subtitle: 'Who am I?',
+      intro: 'Hi! My name is Laviele Trias. I am currently a fourth-year BS Computer Science Student studying at the University of the Philippines Visayas.',
+      experience: 'I have interned as a frontend web developer at DTE Endurance Asia. I have interests in machine learning and data science and have joined the UP Data Science Society to train my data science skills and gain experience. I am also the founder and president of the first-ever premiere Esports Organization in the University of the Philippines Visayas, UPV Diwata Esports.',
+      hobbies: 'I like to play video games and read books in my spare time.',
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 /* About Page */

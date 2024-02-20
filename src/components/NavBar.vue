@@ -1,56 +1,64 @@
 <template>
-<nav class = "navbar">
-  <div class="navbar-brand">
-    <a class="navbar-item">
-      <img src="https://i.imgur.com/H3lKnVi.png" width="30" height="40">
-    </a>
-    <div class="navbar-burger" data-target="navbarlist">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-
-
-  <div id="navbarlist" class="navbar-menu">
-    <div class="navbar-start">
-      <div class="navbar-item has-text-white">
-          Laviele Trias
-        </div>
-    </div>
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field is-grouped">
-          <p class="control">
-            <a class="button is-black gradientbutton" href="#aboutpage">
-              <span>About Me</span>
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-black gradientbutton" href="#skills">
-              <span>Skills</span>
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-black gradientbutton" href="#contact">
-              <span>Contact Me</span>
-            </a>
-          </p>
+  <div>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="https://i.imgur.com/H3lKnVi.png" width="30" height="40">
+        </a>
+        <div class="navbar-burger" data-target="navbarlist">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </div>
-  </div>
-</nav>
 
-  <section class="hero is-medium herobg">
-    <div class ="hero-body">
-      <div class ="container">
-        <h1 class="title is-1 herocontent">Hello, world!</h1>
-        <h2 class="subtitle herocontent">My name is Laviele Trias. I am an aspiring software developer.</h2>
+      <div id="navbarlist" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-text-white">
+            {{ name }}
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p v-for="(menuItem, index) in menuItems" :key="index" class="control">
+                <a class="button is-black gradientbutton" :href="menuItem.link">
+                  <span>{{ menuItem.text }}</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  </template>
+    </nav>
+
+    <section class="hero is-medium herobg">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1 herocontent">{{ greeting }}</h1>
+          <h2 class="subtitle herocontent">{{ introduction }}</h2>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      name: 'Laviele Trias',
+      menuItems: [
+        { text: 'About Me', link: '#aboutpage' },
+        { text: 'Skills', link: '#skills' },
+        { text: 'Contact Me', link: '#contact' },
+      ],
+      greeting: 'Hello, world!',
+      introduction: 'My name is Laviele Trias. I am an aspiring software developer.',
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "~bulma/css/bulma.css";

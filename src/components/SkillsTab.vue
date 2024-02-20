@@ -10,108 +10,20 @@
       <nav class="tabs is-boxed is-fullwidth is-large">
         <div class="container">
           <ul>
-            <ul>
-              <li class="tab" @click="openTab('languages')">
-                <a>Languages</a>
-              </li>
-              <li class="tab" @click="openTab('fworksdb')">
-                <a>Frameworks and Database</a>
-              </li>
-              <li class="tab" @click="openTab('software')"><a>Software</a></li>
-            </ul>
+            <li v-for="(tab, index) in tabs" :key="index" class="tab" @click="openTab(index)">
+              <a>{{ tab.label }}</a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
 
     <div class="container section is-fullwidth">
-      <div id="languages" class="content-tab" ref="languages">
+      <div v-for="(tab, index) in tabs" :key="index" :id="tab.id" class="content-tab" :style="{ display: currentTabIndex === index ? 'block' : 'none' }">
         <div class="columns">
-          <div class="column">
-            <img src="../assets/python.png" width="40" height="60" />
-            <p>Python</p>
-          </div>
-          <div class="column">
-            <img src="../assets/c.png" width="40" height="60" />
-            <p>C</p>
-          </div>
-          <div class="column">
-            <img src="../assets/javascript.png" width="40" height="60" />
-            <p>Javascript</p>
-          </div>
-          <div class="column">
-            <img src="../assets/assembly.svg" width="40" height="60" />
-            <p>NASM</p>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <img src="../assets/html.png" width="40" height="60" />
-            <p>HTML</p>
-          </div>
-          <div class="column">
-            <img src="../assets/css.png" width="40" height="60" />
-            <p>CSS</p>
-          </div>
-          <div class="column">
-            <img src="../assets/flutter.png" width="40" height="60" />
-            <p>Flutter</p>
-          </div>
-          <div class="column">
-            <img src="../assets/php.png" width="40" height="60" />
-            <p>PHP</p>
-          </div>
-          <div class="column">
-            <img src="../assets/java.png" width="40" height="60" />
-            <p>Java</p>
-          </div>
-        </div>
-      </div>
-      <div id="fworksdb" class="content-tab" style="display: none" ref="fworksdb">
-        <div class="container section is-fullwidth">
-          <div class="columns">
-            <div class="column">
-              <img src="../assets/vue.png" width="40" height="60" />
-              <p>Vue.js</p>
-            </div>
-            <div class="column">
-              <img src="../assets/github.png" width="40" height="60" />
-              <p>Github</p>
-            </div>
-            <div class="column">
-              <img src="../assets/git.png" width="40" height="60" />
-              <p>Git</p>
-            </div>
-            <div class="column">
-              <img src="../assets/mysql.png" width="40" height="60" />
-              <p>MySQL</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="software" class="content-tab" style="display: none" ref="software">
-        <div class="container section is-fullwidth">
-          <div class="columns">
-            <div class="column">
-              <img src="../assets/vue.png" width="40" height="60" />
-              <p>Microsoft Office</p>
-            </div>
-            <div class="column">
-              <img src="../assets/mysql.png" width="40" height="60" />
-              <p>Google Suite</p>
-            </div>
-            <div class="column">
-              <img src="../assets/github.png" width="40" height="60" />
-              <p>Notion</p>
-            </div>
-            <div class="column">
-              <img src="../assets/git.png" width="40" height="60" />
-              <p>Figma</p>
-            </div>
-            <div class="column">
-              <img src="../assets/mysql.png" width="40" height="60" />
-              <p>Draw.io</p>
-            </div>
+          <div v-for="(item, itemIndex) in tab.items" :key="itemIndex" class="column">
+            <img :src="item.image" :width="item.width" :height="item.height" />
+            <p>{{ item.name }}</p>
           </div>
         </div>
       </div>
@@ -121,23 +33,52 @@
 
 <script>
 export default {
+  data() {
+    return {
+      currentTabIndex: 0,
+      tabs: [
+        {
+          id: 'languages',
+          label: 'Languages',
+          items: [
+          { name: 'Python', image: require('../assets/python.png'), width: 40, height: 60 },
+            { name: 'C', image: require('../assets/c.png'), width: 40, height: 60 },
+            { name: 'JavaScript', image: require('../assets/javascript.png'), width: 40, height: 60 },
+            { name: 'NASM', image: require('../assets/assembly.svg'), width: 40, height: 60 },
+            { name: 'HTML', image: require('../assets/html.png'), width: 40, height: 60 },
+            { name: 'CSS', image: require('../assets/css.png'), width: 40, height: 60 },
+            { name: 'Flutter', image: require('../assets/flutter.png'), width: 40, height: 60 },
+            { name: 'PHP', image: require('../assets/php.png'), width: 40, height: 60 },
+            { name: 'Java', image: require('../assets/java.png'), width: 40, height: 60 },
+          ],
+        },
+        {
+          id: 'fworksdb',
+          label: 'Frameworks and Database',
+          items: [
+            { name: 'Vue.js', image: require('../assets/vue.png'), width: 40, height: 60 },
+            { name: 'GitHub', image: require('../assets/github.png'), width: 40, height: 60 },
+            { name: 'Git', image: require('../assets/git.png'), width: 40, height: 60 },
+            { name: 'MySQL', image: require('../assets/mysql.png'), width: 40, height: 60 },
+          ],
+        },
+        {
+          id: 'software',
+          label: 'Software',
+          items: [
+            { name: 'Microsoft Office', image: require('@/assets/office.png'), width: 40, height: 60 },
+            { name: 'Google Suite', image: require('../assets/gsuite.png'), width: 40, height: 60 },
+            { name: 'Notion', image: require('../assets/notion.png'), width: 40, height: 60 },
+            { name: 'Figma', image: require('../assets/figma.png'), width: 40, height: 60 },
+            { name: 'Draw.io', image: require('../assets/draw-io.png'), width: 40, height: 60 },
+          ],
+        },
+      ],
+    };
+  },
   methods: {
-    openTab(tabName) {
-      this.$refs[tabName].style.display = "block";
-
-      // Hide other tabs
-      for (const refName in this.$refs) {
-        if (refName !== tabName) {
-          this.$refs[refName].style.display = "none";
-        }
-      }
-
-      // Update tab classes
-      const tablinks = document.querySelectorAll(".tab");
-      tablinks.forEach((tab) => {
-        tab.classList.remove("is-active");
-      });
-      event.currentTarget.classList.add("is-active");
+    openTab(index) {
+      this.currentTabIndex = index;
     },
   },
 };
@@ -149,7 +90,6 @@ export default {
 * {
   background-color: #141416;
 }
-
 .title {
   margin-bottom: 2rem;
   font-family: "Prompt", sans-serif;
