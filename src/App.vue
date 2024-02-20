@@ -1,4 +1,8 @@
 <template>
+    <head>
+    <link rel="icon" href="../assets/avatar.png">
+    <title>Laviele Trias</title>
+  </head>
   <NavBar />
   <AboutTab />
   <SkillsTab />
